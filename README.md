@@ -19,7 +19,7 @@ Create your application by running `rails new yelp` in the directory of your cho
 Verify you've set things up correctly by starting up the `rails server`.
 
 ## Models
-What models will be needing for this application?
+What models will we be needing for this application?
 
 **Restaurant**
 ```
@@ -42,7 +42,7 @@ last_name:string
 Use `$ rails generate model [model_name] [attribute_name]:[attribute_type]` to create the **Restaurant** and **Review** models. Remember, that models should be *singular*. Don't forget to run `$ rails db:migrate` afterwards.
 
 ## Devise
-We still have to make a User model and want the functionality of being able to have users log in and log out of our application. A common way to do this in Rails is through the [Devise authentication library](https://github.com/plataformatec/devise). 
+We still have to make a `User` model and want the functionality of being able to have users log in and log out of our application. A common way to do this in Rails is through the [Devise authentication library](https://github.com/plataformatec/devise). 
 
 To set up devise, add the line `gem 'devise'` to your `Gemfile` and run `bundle install`. Next, install devise with the command `$ rails generate devise:install`.
 
