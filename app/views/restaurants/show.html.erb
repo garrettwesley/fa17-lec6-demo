@@ -1,0 +1,19 @@
+<h1><%= @restaurant.name %>'s Reviews</h1>
+
+<% @restaurant.reviews.each do |r| %>
+	<%= link_to r.user.first_name, user_path(r.user) %> says: <%= r.content %> <%= r.rating %>/5
+	<br />
+<% end %>
+
+<h2> Post a Review </h2>
+
+<%= form_for @review, url: restaurant_path(@restaurant) do |f| %>
+	Content: <%= f.text_area :content %>
+	<br />
+	Rating: <%= f.number_field :rating %>
+	<br />
+	<%= f.submit %>
+<% end %>
+
+<br />
+<%= link_to "Back to Home", root_path %>
