@@ -76,6 +76,7 @@ Let's make sure we don't have reviews with empty content and no ratings. Add the
 Now that we have our models, let's give our app the functionality we need. We want to:
 - Show all restaurants
 - Show a restaurant and its reviews
+- Show all users
 - Show a user profile and all their reviews
 - Post a new review 
 
@@ -103,9 +104,9 @@ Lastly, let's turn the restaurant names on our home page into links by replacing
 ```
 Click the link and see that your reviews show up.
  
-### Show a user profile and all their reviews
+### Show all users/Show a user profile and all their reviews
 
-This is really similar to the what we just did. Try this out on your own.
+This is really similar to the what we just did but for users. Try this out on your own.
 
 ### Post a new review
 
