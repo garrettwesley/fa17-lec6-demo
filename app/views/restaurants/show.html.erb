@@ -7,7 +7,7 @@
 
 <h2> Post a Review </h2>
 
-<%= form_for @review, url: restaurant_path(@restaurant) do |f| %>
+<%= form_for Review.new, url: restaurant_path(@restaurant) do |f| %>
 	Content: <%= f.text_area :content %>
 	<br />
 	Rating: <%= f.number_field :rating %>

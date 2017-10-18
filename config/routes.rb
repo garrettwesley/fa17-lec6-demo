@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  get 'users', to: 'users#index', as: 'users'
-  get 'users/:id', to: 'users#show', as: 'user'
+  resources :users, only: [:index, :show] 
+  # get 'users', to: 'users#index', as: 'users'
+  # get 'users/:id', to: 'users#show', as: 'user'
+
   get 'restaurants/:id', to: 'restaurants#show', as: 'restaurant'
-  post '/restaurants/:id', to: 'reviews#create'
+  post 'restaurants/:id', to: 'reviews#create'
 end
