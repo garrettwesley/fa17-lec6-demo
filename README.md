@@ -14,7 +14,7 @@ In this lecture, we will be recreating Yelp, the popular restaurant reviews site
 Let's get started!
 
 ## Getting Started 
-Create your application by running `rails new yelp` in the directory of your choice and `cd ~/yelp`. You will not need to run `bundle install` because making a new app will automatically do this for you. 
+Create your application by running `rails new yelp` in the directory of your choice and `cd yelp`. You will not need to run `bundle install` because making a new app will automatically do this for you. 
 
 Verify you've set things up correctly by starting up the `rails server`.
 
@@ -121,7 +121,7 @@ Save the review object you just created and `redirect_to` the restaurant page at
 
 **Route**
 
-Let's create a `POST` route for the form to visit when it is submitted. We will want the route to be for `restaurants/:id` and this should go to `reviews#create`. This allows us to have the restaurant id in params so we can set the review's restaurant to be the id of the restaurant's page we are on.
+Let's create a `POST` route for the form to visit when it is submitted. We will want the route to be for `restaurants/:id` and this should go to `reviews#create`. This allows us to have the restaurant id when we get `params[:id]` so we can set the review's restaurant to be the id of the restaurant's page we are on.
 
 **form_for**
 
